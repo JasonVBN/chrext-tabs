@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Cleanup",
+  "version": "1.0",
+  "description": "Simple tool to help cleanup tabs. My first Chrome extension",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"]
+}
