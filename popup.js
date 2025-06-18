@@ -1,6 +1,7 @@
 document.getElementById('clickMe').addEventListener('click', () => {
     chrome.tabs.query({}, function(tabs) {
         const titlesList = document.createElement('ul');
+        
         tabs.forEach(tab => {
             const li = document.createElement('li');
             
@@ -17,6 +18,7 @@ document.getElementById('clickMe').addEventListener('click', () => {
             titlesList.appendChild(li);
 
         });
+
         const tabInfo_div = document.getElementById('tabInfo');
         tabInfo_div.textContent = `Open tabs: ${tabs.length}`; //clears old content
         tabInfo_div.appendChild(titlesList);
